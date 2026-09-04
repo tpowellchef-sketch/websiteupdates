@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vision & Mission - R & C Creative Solutions</title>
+    <style>
+        /* Base Styles & Typography */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            color: #333333;
+            background-color: #fcfcfc;
+            line-height: 1.8;
+        }
+
+        /* Navigation Bar */
+        header {
+            background-color: #ffffff;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 20px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #4a4a4a;
+            font-size: 0.95rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: #000000;
+            font-weight: bold;
+        }
+
+        /* Page Container */
+        main {
+            max-width: 950px;
+            margin: 0 auto;
+            padding: 50px 20px 60px;
+        }
+
+        /* Main Page Heading (Above image and subheadings) */
+        .page-title {
+            font-size: 1.8rem;
+            font-weight: 300;
+            letter-spacing: 1.5px;
+            color: #222222;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        /* Two-Column Side-by-Side Layout */
+        .content-container {
+            display: flex;
+            flex-direction: row;
+            align-items: stretch;
+            gap: 40px;
+        }
+
+        /* Text Column */
+        .text-column {
+            flex: 1;
+            font-size: 1.05rem;
+            color: #444444;
+            text-align: left;
+        }
+
+        /* Bold Subheadings */
+        .text-column h3 {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #222222;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+
+        .text-column h3:first-of-type {
+            margin-top: 0;
+        }
+
+        .text-column p {
+            margin-bottom: 20px;
+        }
+
+        /* Image Column - Matches Text Height and Stays on Right */
+        .image-column {
+            flex: 1;
+            display: flex;
+        }
+
+        .image-column img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            border-radius: 4px;
+        }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid #e0e0e0;
+            padding: 30px 20px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #777777;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        /* Mobile Responsive Adjustments */
+        @media (max-width: 768px) {
+            .page-title {
+                text-align: center;
+            }
+
+            .content-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .image-column {
+                width: 100%;
+                height: 300px;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="vision-mission.html" class="active">Vision & Mission</a></li>
+                <li><a href="chris.html">Chris</a></li>
+                <li><a href="rachel.html">Rachel</a></li>
+                <li><a href="partnerships.html">Partnerships/Endorsements</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Vision & Mission Title at the top -->
+        <h1 class="page-title">Vision & Mission</h1>
+
+        <div class="content-container">
+            <!-- Left Side: Subheadings and Text -->
+            <div class="text-column">
+                
+                <h3>Our Uniqueness</h3>
+                <p>Having come from completely different working backgrounds we nonetheless have a shared vision based on an innovative approach to Holistic lifestyle development. We are able to deliver this because our rich diversity of skills are complimentary. We are so happy to offer you this unique creative solution focussed service.</p>
+                
+                <h3>Naming What Matters</h3>
+                <p>We’ll dig into what matters to you- across relationships, work, health and the fun stuff. Then we’ll look at how your values line up with what your team and organisation care about too.</p>
+                
+                <h3>Building autonomy</h3>
+                <p>When what you do matches what you value, you don’t need someone else to keep you motivated. You just... are. And when things get tricky, you bounce back more quickly.</p>
+                
+                <h3>Team Connectivity</h3>
+                <p>Something lovely happens when people share what they care about. Teams get each other, talk more openly, and find solutions more naturally and speedily.</p>
+                
+                <h3>Integration with existing systems</h3>
+                <p>Don’t worry, we’re not adding to your “To do” list. Our programme will fit in with whatever systems you already have; supervision, appraisals and meetings. Our aim is for you get more from what you already have.</p>
+
+            </div>
+
+            <!-- Right Side: Image matching text height -->
+            <div class="image-column">
+                <img src="images/visionimg.avif" alt="Vision & Mission">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© R & C Creative Solutions. All rights reserved.</p>
+        <p>info@randccreativesolutions.com</p>
+    </footer>
+
+</body>
+</html>

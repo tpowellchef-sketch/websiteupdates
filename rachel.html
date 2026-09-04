@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rachel - R & C Creative Solutions</title>
+    <style>
+        /* Base Styles & Typography */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            color: #333333;
+            background-color: #fcfcfc;
+            line-height: 1.8;
+        }
+
+        /* Navigation Bar */
+        header {
+            background-color: #ffffff;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 20px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #4a4a4a;
+            font-size: 0.95rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+
+            nav a:hover,
+            nav a.active {
+                color: #000000;
+                font-weight: bold;
+            }
+
+        /* Page Container */
+        main {
+            max-width: 950px;
+            margin: 0 auto;
+            padding: 50px 20px 60px;
+        }
+
+        /* Main Page Heading */
+        .page-title {
+            font-size: 1.8rem;
+            font-weight: 300;
+            letter-spacing: 1.5px;
+            color: #222222;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        /* Two-Column Side-by-Side Layout */
+        .content-container {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 40px;
+        }
+
+        /* Text Column */
+        .text-column {
+            flex: 1;
+            font-size: 1.05rem;
+            color: #444444;
+            text-align: left;
+        }
+
+            /* Bold Subheadings */
+            .text-column h3 {
+                font-size: 1.1rem;
+                font-weight: bold;
+                color: #222222;
+                margin-top: 25px;
+                margin-bottom: 10px;
+            }
+
+            .text-column p {
+                margin-bottom: 20px;
+            }
+
+            .text-column ul {
+                margin-bottom: 20px;
+                padding-left: 20px;
+            }
+
+            .text-column li {
+                margin-bottom: 10px;
+            }
+
+            .text-column a {
+                color: #222222;
+                text-decoration: underline;
+            }
+
+        /* Image Column - Sticky positioned to follow page scroll */
+        .image-column {
+            flex: 1;
+            position: sticky;
+            top: 20px;
+        }
+
+            .image-column img {
+                width: 100%;
+                height: auto;
+                display: block;
+                border-radius: 4px;
+            }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid #e0e0e0;
+            padding: 30px 20px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #777777;
+        }
+
+            footer p {
+                margin: 5px 0;
+            }
+
+        /* Mobile Responsive Adjustments */
+        @media (max-width: 768px) {
+            .page-title {
+                text-align: center;
+            }
+
+            .content-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .image-column {
+                width: 100%;
+                position: static;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="vision-mission.html">Vision & Mission</a></li>
+                <li><a href="chris.html">Chris</a></li>
+                <li><a href="rachel.html" class="active">Rachel</a></li>
+                <li><a href="partnerships.html">Partnerships/Endorsements</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="page-title">Rachel</h1>
+
+        <div class="content-container">
+            <div class="text-column">
+
+                <p>Throughout my career, curiosity, resilience, and a genuine interest in people have shaped the way I work.</p>
+
+                <p>I bring over two decades of freelance production finance experience across scripted television and feature films, having begun my career at the BBC. Following a major life change in 2019, I took time to reflect on what helps people work and live well, deepening my commitment to health, mental wellbeing, and more sustainable ways of working.</p>
+
+                <p>I later joined Netflix’s UK Production Finance team, managing a large slate of shows and supporting colleagues through leadership, mentoring, and training. After marrying Chris in September 2025 and leaving Netflix later that year, I co-founded R&C Creative Solutions, bringing together my finance and production experience with his 30 years’ expertise in mental health to support individuals, teams, and organisations to thrive.</p>
+
+                <p>As well as this collaborative work, I am also still working as a production finance consultant. Please see below for more detail.</p>
+
+                <h3>Production Finance Consultancy</h3>
+
+                <h3>Services Offered</h3>
+                <p>Scripted Film and HETV Production finance support and solutions for independent, studio or traditional broadcast models, including, but not exclusively:</p>
+
+                <ul>
+                    <li>Assistance with finance plans.</li>
+                    <li>Budgeting services – All budget levels, HETV or Film, multi-territory/multi currency.</li>
+                    <li>Cashflows – Single/ Multi currency.</li>
+                    <li>Tax credit assistance and support, tax credit calculations.</li>
+                    <li>Mentoring services for Production accounting teams.</li>
+                </ul>
+
+                <h3>Get in Touch</h3>
+                <p>Please contact via <a href="mailto:Rachelplosewilliams@icloud.com">Rachelplosewilliams@icloud.com</a></p>
+
+            </div>
+
+            <div class="image-column">
+                <img src="images/rachelimg.jpg" alt="Rachel - R & C Creative Solutions">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© R & C Creative Solutions. All rights reserved.</p>
+        <p>info@randccreativesolutions.com</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - R & C Creative Solutions</title>
+    <style>
+        /* Base Styles & Typography */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            color: #333333;
+            background-color: #fcfcfc;
+            line-height: 1.8;
+        }
+
+        /* Navigation Bar */
+        header {
+            background-color: #ffffff;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 20px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #4a4a4a;
+            font-size: 0.95rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+
+            nav a:hover,
+            nav a.active {
+                color: #000000;
+                font-weight: bold;
+            }
+
+        /* Page Container */
+        main {
+            max-width: 950px;
+            margin: 0 auto;
+            padding: 50px 20px 60px;
+        }
+
+        /* Page Title */
+        .page-title {
+            font-size: 1.8rem;
+            font-weight: 300;
+            letter-spacing: 1.5px;
+            color: #222222;
+            margin-bottom: 25px;
+        }
+
+        /* Two-Column Side-by-Side Layout */
+        .content-container {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 40px;
+        }
+
+        /* Text Column */
+        .text-column {
+            flex: 1;
+            font-size: 1.05rem;
+            color: #444444;
+            text-align: left;
+        }
+
+            .text-column p {
+                margin-bottom: 20px;
+            }
+
+        /* Image Column */
+        .image-column {
+            flex-shrink: 0;
+            width: 270px;
+        }
+
+            .image-column img {
+                width: 100%;
+                height: auto;
+                display: block;
+                border-radius: 4px;
+            }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid #e0e0e0;
+            padding: 30px 20px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #777777;
+        }
+
+            footer p {
+                margin: 5px 0;
+            }
+
+        /* Mobile Responsive Adjustments */
+        @media (max-width: 768px) {
+            .page-title {
+                text-align: center;
+            }
+
+            .content-container {
+                flex-direction: column-reverse;
+                align-items: center;
+            }
+
+            .image-column {
+                width: 80%;
+                margin-bottom: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="vision-mission.html">Vision & Mission</a></li>
+                <li><a href="chris.html">Chris</a></li>
+                <li><a href="rachel.html">Rachel</a></li>
+                <li><a href="partnerships.html">Partnerships/Endorsements</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="page-title">Rachel and Chris</h2>
+
+        <div class="content-container">
+
+            <div class="text-column">
+                <p>We believe change works best when it fits your life. At R & C Creative Solutions, we work with you to create thoughtful, bespoke approaches shaped by your values, circumstances, and way of working — so new habits feel natural.</p>
+
+                <p>Life changes, and needs do too. When things feel stuck, we help you move forward through doing, reflecting, and choosing the next step together. There is no right or wrong — only decisions. Our mission is to help your vision become part of everyday life.</p>
+
+                <p>Following the welcome we received, we have committed to partner on a diversity of Cornish initiatives. We have been inspired by listening, the collaborative ethos, and support for sustainable models for change. With gratitude to Cornwall, we are excited to extend our network more broadly and welcome your involvement.</p>
+            </div>
+
+            <div class="image-column">
+                <img src="images/aboutimg.avif" alt="Rachel and Chris - R & C Creative Solutions">
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>© R & C Creative Solutions. All rights reserved.</p>
+        <p>info@randccreativesolutions.com</p>
+    </footer>
+
+</body>
+</html>

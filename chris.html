@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chris - R & C Creative Solutions</title>
+    <style>
+        /* Base Styles & Typography */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            color: #333333;
+            background-color: #fcfcfc;
+            line-height: 1.8;
+        }
+
+        /* Navigation Bar */
+        header {
+            background-color: #ffffff;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 20px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #4a4a4a;
+            font-size: 0.95rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: #000000;
+            font-weight: bold;
+        }
+
+        /* Page Container */
+        main {
+            max-width: 950px;
+            margin: 0 auto;
+            padding: 50px 20px 60px;
+        }
+
+        /* Main Page Heading (Above image and text) */
+        .page-title {
+            font-size: 1.8rem;
+            font-weight: 300;
+            letter-spacing: 1.5px;
+            color: #222222;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        /* Two-Column Side-by-Side Layout */
+        .content-container {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start; /* Keeps image from stretching to match text height */
+            gap: 40px;
+        }
+
+        /* Text Column */
+        .text-column {
+            flex: 1;
+            font-size: 1.05rem;
+            color: #444444;
+            text-align: left;
+        }
+
+        /* Bold Subheadings */
+        .text-column h3 {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #222222;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+
+        .text-column h3:first-of-type {
+            margin-top: 0;
+        }
+
+        .text-column p {
+            margin-bottom: 20px;
+        }
+
+        .text-column a {
+            color: #222222;
+            text-decoration: underline;
+        }
+
+        /* Image Column - Preserves full photo aspect ratio */
+        .image-column {
+            flex: 1;
+            position: sticky; /* Keeps the photo nicely visible as you scroll */
+            top: 20px;
+        }
+
+        .image-column img {
+            width: 100%;
+            height: auto; /* Natural aspect ratio (no face cropping) */
+            display: block;
+            border-radius: 4px;
+        }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid #e0e0e0;
+            padding: 30px 20px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #777777;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        /* Mobile Responsive Adjustments */
+        @media (max-width: 768px) {
+            .page-title {
+                text-align: center;
+            }
+
+            .content-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .image-column {
+                width: 100%;
+                position: static;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="vision-mission.html">Vision & Mission</a></li>
+                <li><a href="chris.html" class="active">Chris</a></li>
+                <li><a href="rachel.html">Rachel</a></li>
+                <li><a href="partnerships.html">Partnerships/Endorsements</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="page-title">Chris's Psychotherapy service</h1>
+
+        <div class="content-container">
+            <div class="text-column">
+
+                <h3>Approach & Experience</h3>
+                <p>I am a holistic psychotherapist, experienced in CBT, ACT, CAT, CFT, mindfulness and EMDR, working both individually and in groups. I can offer an adaptive personalised approach having worked across primary care, inpatient, secure settings, community/secondary care, and therapeutic community work with adolescents.</p>
+                <p>I care deeply about my work, and have gained respect for those brave people who over the years have had the courage to speak with me about some of the worst experiences a person could endure.</p>
+
+                <h3>How We Work Together</h3>
+                <p>I will listen to your story, help you to break down what can feel huge and overwhelming into manageable steps, taking the heat out of your distress. I don’t have all the answers, so we need to find out together by learning step by step what breaking old unhelpful habits may be replaced with. Together, we are better placed to find the solution.</p>
+                <p>At that point, your tool kit of dealing with the tough stuff starts to become the way in which life can improve, become more enjoyable, and chosen challenges are met confidently. I believe we all have so much more potential than we realise and with curiosity, skilling up, you can, if you put the time and work in, realise and begin to to see the happier version of you..</p>
+
+                <h3>Session Details</h3>
+                <p>I offer a free phone call to see if I’m the right person for you because relationship is key. I like to work in weekly sessions, same time each week. Assessments are 90mins followed by hourly sessions. We build in review points along the way so we can check things are still moving in the right direction.</p>
+
+                <h3>Qualifications and Project Experience</h3>
+                <p>BABCP Accred CBT. Level 3 EMDR Practioner (EMDR Europe). CAT trained (Southampton University}. Mindfulness Teacher Level 1 ( Bangor University ) ACT trained to work with Long Term Conditions. (Reading University). C.F.T introduction course (Paul Gilbert OBE; Derby University). RMN Qualified. Collaboration work with Reading Neuropsychology team to adapt protocols to be more helpful to neurodiverse clients using CBT. Collaboration with Gavin Lambos facilitating secondary care clients accessing, rehearsing and recording at music studio. This came from my love of music both as a songwriter, musician and performer, and decades of involvement in music communities and industries. Facilitation of workshops within NHS and privately.</p>
+
+                <h3>Get in Touch</h3>
+                <p>Please contact via <a href="mailto:mindfulness.chris@gmail.com">mindfulness.chris@gmail.com</a></p>
+
+            </div>
+
+            <div class="image-column">
+                <img src="images/chrisimg.avif" alt="Chris - Psychotherapist">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© R & C Creative Solutions. All rights reserved.</p>
+        <p>info@randccreativesolutions.com</p>
+    </footer>
+
+</body>
+</html>
